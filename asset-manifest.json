@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/consumographqlspacex/static/css/main.572b9ba7.css",
+    "main.js": "/consumographqlspacex/static/js/main.da99bb9f.js",
+    "index.html": "/consumographqlspacex/index.html",
+    "main.572b9ba7.css.map": "/consumographqlspacex/static/css/main.572b9ba7.css.map",
+    "main.da99bb9f.js.map": "/consumographqlspacex/static/js/main.da99bb9f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.572b9ba7.css",
+    "static/js/main.da99bb9f.js"
+  ]
+}
