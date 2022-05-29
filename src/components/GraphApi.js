@@ -1,5 +1,6 @@
 import useLaunches from './Launches';
 import classes from './GraphApi.module.css';
+import ListCol from './ListCol';
 
 const GraphApi = () => {
   const launches = useLaunches()
@@ -7,24 +8,27 @@ const GraphApi = () => {
     <ul className={classes.listcontainer} >
         {launches.map((launch) => (
           <li className={classes.element} key={launch.id}>
-            <div className={classes.element__col}>
-              <div className={classes.element__name} >Mission Name:</div>
-              <div className={classes.element__desc}>
-                {launch.mission_name}
-              </div>
-            </div>
-            <div className={classes.element__col}>
-              <div className={classes.element__name}>Launch Site:</div>
-              <div className={classes.element__desc}>
-                {launch.launch_site.site_name_long}
-              </div>
-            </div>
-            <div className={classes.element__col} >
-              <div className={classes.element__name}>Launch Date:</div>
-              <div className={classes.element__desc}>
-                {new Date(launch.launch_date_utc).toString() }
-              </div>
-            </div>
+            <ListCol
+              classNameCol={classes.element__col}
+              classNameN={classes.element__name}
+              classNameD={classes.element__desc}
+              name='Mission Name:'
+              desc={launch.mission_name}
+            />
+            <ListCol
+              classNameCol={classes.element__col}
+              classNameN={classes.element__name}
+              classNameD={classes.element__desc}
+              name='Launch Site:'
+              desc={launch.launch_site.site_name_long}
+            />
+            <ListCol
+              classNameCol={classes.element__col}
+              classNameN={classes.element__name}
+              classNameD={classes.element__desc}
+              name='Launch Date:'
+              desc={new Date(launch.launch_date_utc).toString()}
+            />
           </li>
           ))
         }
