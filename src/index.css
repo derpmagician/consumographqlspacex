@@ -22,3 +22,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h2 {
+  color: gold;
+  margin: 5px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.launch__details {
+  margin: 20px;
+  color: white;
+}
+
+.success{
+  color: green;
+}
+
+.failure{
+  color: red;
+}
