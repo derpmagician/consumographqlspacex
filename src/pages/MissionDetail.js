@@ -93,15 +93,20 @@ const MissionDetail = () => {
         <header>
           <h2>Video</h2>
         </header>
-        <iframe id="player" type="text/html" width="640" height="360"
-        src={`http://www.youtube.com/embed/${urlId}?enablejsapi=1&origin=http://youtube.com`}
-        frameBorder="0"></iframe>
+        <iframe
+          width="853"
+          height="480"
+          src={`https://www.youtube.com/embed/${urlId}`}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="Embedded youtube"
+        />
 
       </section>
 
     </div>
   )
-
 
 }
 
