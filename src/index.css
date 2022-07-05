@@ -33,6 +33,13 @@ h2 {
 .launch__details {
   margin: 20px;
   color: white;
+  max-width: 600px;
+  text-align: center;
+
+}
+
+.launch__details a {
+  color: green;
 }
 
 .success{
