@@ -72,7 +72,7 @@ const MissionDetail = () => {
 
   getUrl()
   return (
-    <div>
+    <div className="container">
 
       <h2>Mission Name: {launch.mission_name}</h2>
       <h2>
@@ -84,23 +84,18 @@ const MissionDetail = () => {
         <h3 >Details:</h3 >
         { !launch.details ? <div>None</div> : <div >{launch.details}</div> }
         <p>
-          <a target="_blank" rel="noreferrer" href={launch.links.wikipedia}className="launch__">
+          <a  target="_blank" rel="noreferrer" href={launch.links.wikipedia} className="container__info">
             Click here for more info
           </a>
         </p>
       </section>
-      <section>
+      <section className="video__container">
         <header>
-          <h2>Video</h2>
+          <h3>Video</h3>
         </header>
-        <iframe
-          width="853"
-          height="480"
-          src={`https://www.youtube.com/embed/${urlId}`}
-          frameBorder="0"
+        <iframe src={`https://www.youtube.com/embed/${urlId}`} frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="Embedded youtube"
+          allowFullScreen title="Embedded youtube"
         />
 
       </section>
