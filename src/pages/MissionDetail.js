@@ -58,7 +58,7 @@ const MissionDetail = () => {
   if (isLoading) {
 
     return (
-      <div className="App">
+      <div className="success">
         <h1>Cargando...</h1>
       </div>
     );
@@ -82,7 +82,7 @@ const MissionDetail = () => {
       </h2>
       <section className="launch__details">
         <h3 >Details:</h3 >
-        { !launch.details ? <div>None</div> : <div >{launch.details}</div> }
+        { !launch.details ? <div className="">None</div> : <div >{launch.details}</div> }
         <p>
           <a  target="_blank" rel="noreferrer" href={launch.links.wikipedia} className="container__info">
             Click here for more info
